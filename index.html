@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cfs_m1s02_arrays_js</title>
+</head>
+<body>
+	<h1>
+		[M1S02] Ex 5 - Uso de arrays em Javascript
+	</h1>
+	<section>
+		<p>
+			<strong>
+				Crie um cenário onde seria útil o uso de arrays em Javascript;
+			</strong>
+		</p>
+		<p>
+			<strong>
+				O tipo de objeto array é muito usado em Javascript pois permite que trabalhemos com listagens. Exemplifique uma situação em que você usaria array.
+			</strong>
+		</p>
+	</section>
+	<section data-resposta>
+
+	</section>
+	<script>
+		let diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+		let secaoResposta = document.querySelector("[data-resposta]");
+
+		let h2 = document.createElement('h2');
+		h2.innerText = "Dias da semana";
+
+		secaoResposta.appendChild(h2)
+
+		diasDaSemana.map(dia => {
+			let elem = document.createElement('p');
+			elem.innerText = dia;
+
+			secaoResposta.appendChild(elem);
+		})
+	</script>
+</body>
+</html>
